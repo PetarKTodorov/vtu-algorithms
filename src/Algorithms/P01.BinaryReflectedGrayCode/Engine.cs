@@ -7,13 +7,6 @@
     {
         private const int DEFAULT_INITIAL_VALUE = 1;
 
-        private readonly StringBuilder stringBuilder;
-
-        public Engine()
-        {
-            this.stringBuilder = new StringBuilder();
-        }
-
         public void Run()
         {
             Console.Write("Please enter a number: ");
