@@ -4,7 +4,9 @@
     {
         public static void Main()
         {
-            Engine.Run();
+            var engine = new Engine();
+
+            engine.Run();
         } 
     }
 }

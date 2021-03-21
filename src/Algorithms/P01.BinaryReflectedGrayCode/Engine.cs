@@ -3,38 +3,73 @@
     using System;
     using System.Text;
 
-    public static class Engine
+    public class Engine
     {
-        private static StringBuilder stringBuilder = new StringBuilder();
+        private const int DEFAULT_INITIAL_VALUE = 1;
 
-        public static void Run()
+        private readonly StringBuilder stringBuilder;
+
+        public Engine()
+        {
+            this.stringBuilder = new StringBuilder();
+        }
+
+        public void Run()
         {
             Console.Write("Please enter a number: ");
             int depth = int.Parse(Console.ReadLine());
 
-            Generate(depth);
+            this.Generate(depth);
         }
 
-        private static void Generate(int depth)
+        private void Generate(int depth)
         {
-            RecursiveGenerator(1, string.Empty, depth);
+            string recursiveResult = this.RecursiveGenerator(DEFAULT_INITIAL_VALUE, string.Empty, depth);
 
-            Console.WriteLine(stringBuilder.ToString());
+            string notRecursiveResult = this.NotRecursiveGenerator(depth);
+
+            this.Print(recursiveResult, notRecursiveResult);
         }
 
-        private static void RecursiveGenerator(int number, string prevValue, int limit)
+        private string RecursiveGenerator(int number, string prevValue, int limit)
         {
-            if (number > limit)
+            bool isReachBottomOfRecursion = number > limit;
+            if (isReachBottomOfRecursion)
             {
-                return;
+                return prevValue;
             }
 
-            prevValue += string.Empty + number + string.Empty + prevValue;
+            prevValue = prevValue + number + prevValue;
 
-            stringBuilder.AppendLine(prevValue.Trim());
             number++;
 
-            RecursiveGenerator(number, prevValue, limit);
+            return this.RecursiveGenerator(number, prevValue, limit);
+        }
+
+        private string NotRecursiveGenerator(int limit)
+        {
+            string result = string.Empty;
+
+            for (int number = DEFAULT_INITIAL_VALUE; number <= limit; number++)
+            {
+                result += number + result;
+            }
+
+            return result;
+        }
+
+        private void Print(string recursiveResult, string notRecursiveResult)
+        {
+            char separatorSymbol = '-';
+            int countOfPrintSeparatorSymbol = 50;
+
+            string separatorLine = new string(separatorSymbol, countOfPrintSeparatorSymbol);
+
+            Console.WriteLine(separatorLine);
+            Console.WriteLine($"Recursive Result: {Environment.NewLine}{recursiveResult}{Environment.NewLine}");
+
+            Console.WriteLine($"Not Recursive Result: {Environment.NewLine}{notRecursiveResult}{Environment.NewLine}");
+            Console.WriteLine(separatorLine);
         }
     }
 }

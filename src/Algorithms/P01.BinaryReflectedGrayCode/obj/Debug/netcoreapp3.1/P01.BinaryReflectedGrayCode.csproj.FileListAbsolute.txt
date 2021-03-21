@@ -1,0 +1,13 @@
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\bin\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.exe
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\bin\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.deps.json
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\bin\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.runtimeconfig.json
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\bin\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.runtimeconfig.dev.json
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\bin\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.dll
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\bin\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.pdb
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\obj\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.csprojAssemblyReference.cache
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\obj\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.AssemblyInfoInputs.cache
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\obj\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.AssemblyInfo.cs
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\obj\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.csproj.CoreCompileInputs.cache
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\obj\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.dll
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\obj\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.pdb
+D:\GitHub\vtu-algorithms\src\Algorithms\P01.BinaryReflectedGrayCode\obj\Debug\netcoreapp3.1\P01.BinaryReflectedGrayCode.genruntimeconfig.cache
