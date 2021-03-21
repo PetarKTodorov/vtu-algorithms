@@ -1,7 +1,6 @@
 ﻿namespace P01.BinaryReflectedGrayCode
 {
     using System;
-    using System.Text;
 
     public class Engine
     {
