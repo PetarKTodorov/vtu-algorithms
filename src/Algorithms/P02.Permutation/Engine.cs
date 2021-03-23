@@ -45,7 +45,8 @@
 
         private void RecursiveGenerator(int number)
         {
-            if (number == 1)
+            bool isReachBottomOfRecursion = number == 1;
+            if (isReachBottomOfRecursion)
             {
                 string permutation = String.Join(" ", this.NumbersInFactoriel);
 
