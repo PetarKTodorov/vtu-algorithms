@@ -5,7 +5,13 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.BinaryReflectedGrayCode", "P01.BinaryReflectedGrayCode\P01.BinaryReflectedGrayCode.csproj", "{D2A5A539-C185-4891-997F-E1A322E97B99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.Permutation", "P02.Permutation\P02.Permutation.csproj", "{792CCF9D-8F61-4996-8521-7DF00DBE1C31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.Permutation", "P02.Permutation\P02.Permutation.csproj", "{792CCF9D-8F61-4996-8521-7DF00DBE1C31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.QuickSort", "P03.QuickSort\P03.QuickSort.csproj", "{24BDD76A-4DBA-4B90-9D6E-0DC1917678BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.LinkedList", "P04.Test\P04.LinkedList.csproj", "{863A2E8C-4183-496A-8842-182AA2FB4481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.ReversePolishNotation", "P05.PolishRecord\P05.ReversePolishNotation.csproj", "{12E84085-584D-4240-9B33-DB5FAF56285E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{792CCF9D-8F61-4996-8521-7DF00DBE1C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{792CCF9D-8F61-4996-8521-7DF00DBE1C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{792CCF9D-8F61-4996-8521-7DF00DBE1C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24BDD76A-4DBA-4B90-9D6E-0DC1917678BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24BDD76A-4DBA-4B90-9D6E-0DC1917678BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24BDD76A-4DBA-4B90-9D6E-0DC1917678BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24BDD76A-4DBA-4B90-9D6E-0DC1917678BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863A2E8C-4183-496A-8842-182AA2FB4481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863A2E8C-4183-496A-8842-182AA2FB4481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863A2E8C-4183-496A-8842-182AA2FB4481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863A2E8C-4183-496A-8842-182AA2FB4481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E84085-584D-4240-9B33-DB5FAF56285E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E84085-584D-4240-9B33-DB5FAF56285E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E84085-584D-4240-9B33-DB5FAF56285E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E84085-584D-4240-9B33-DB5FAF56285E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
