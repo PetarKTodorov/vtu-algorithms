@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.QuickSort", "P03.QuickS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.LinkedList", "P04.Test\P04.LinkedList.csproj", "{863A2E8C-4183-496A-8842-182AA2FB4481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.ReversePolishNotation", "P05.PolishRecord\P05.ReversePolishNotation.csproj", "{12E84085-584D-4240-9B33-DB5FAF56285E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.ReversePolishNotation", "P05.PolishRecord\P05.ReversePolishNotation.csproj", "{12E84085-584D-4240-9B33-DB5FAF56285E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.JosephusTask", "P06.JosephusTask\P06.JosephusTask.csproj", "{DA723CCD-7007-4666-892F-C61FA7DFA803}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{12E84085-584D-4240-9B33-DB5FAF56285E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12E84085-584D-4240-9B33-DB5FAF56285E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12E84085-584D-4240-9B33-DB5FAF56285E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA723CCD-7007-4666-892F-C61FA7DFA803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA723CCD-7007-4666-892F-C61FA7DFA803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA723CCD-7007-4666-892F-C61FA7DFA803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA723CCD-7007-4666-892F-C61FA7DFA803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
