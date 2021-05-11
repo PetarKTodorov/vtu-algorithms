@@ -13,14 +13,18 @@
 
             tree.AddNR(ref node1, 1);
             tree.AddNR(ref node1, 2);
+            tree.AddNR(ref node1, 15);
             tree.AddNR(ref node1, 8);
             tree.AddNR(ref node1, 3);
             tree.AddNR(ref node1, 3);
+            tree.AddNR(ref node1, 20);
 
             tree.RemoveNodeNR(ref node1, 7);
             tree.RemoveNodeNR(ref node1, 3);
 
-            tree.Traverse(node1); // Output:  1 2 8 10
+            tree.RemoveNodeNR(ref node1, 10);
+
+            tree.Traverse(node1); // Output: 20 1 2 8
         }
 
         public class Node
@@ -254,6 +258,11 @@
                     }
                     else
                     {
+                        if (root.right != null)
+                        {
+                            child.left = root.right;
+                        }
+
                         root = child;
                     }
                 }
