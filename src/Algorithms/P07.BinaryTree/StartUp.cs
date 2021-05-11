@@ -9,22 +9,21 @@
             var tree = new Tree();
 
             var node1 = new Node();
-            node1.value = 10;
+            node1.value = 8;
 
-            tree.AddNR(ref node1, 1);
             tree.AddNR(ref node1, 2);
+            tree.AddNR(ref node1, 1);
+            tree.AddNR(ref node1, 13);
+            tree.AddNR(ref node1, 9);
+            tree.AddNR(ref node1, 10);
+            tree.AddNR(ref node1, 12);
             tree.AddNR(ref node1, 15);
-            tree.AddNR(ref node1, 8);
-            tree.AddNR(ref node1, 3);
-            tree.AddNR(ref node1, 3);
-            tree.AddNR(ref node1, 20);
 
-            tree.RemoveNodeNR(ref node1, 7);
             tree.RemoveNodeNR(ref node1, 3);
+            tree.RemoveNodeNR(ref node1, 2);
+            tree.RemoveNodeNR(ref node1, 13);
 
-            tree.RemoveNodeNR(ref node1, 10);
-
-            tree.Traverse(node1); // Output: 20 1 2 8
+            tree.Traverse(node1);
         }
 
         public class Node
@@ -204,15 +203,13 @@
                 while (curr != null && curr.value != key)
                 {
                     parent = curr;
-
-                    if (key < curr.value)
+                    if (curr.value > key)
                     {
                         curr = curr.left;
+                        continue;
                     }
-                    else
-                    {
-                        curr = curr.right;
-                    }
+
+                    curr = curr.right;
                 }
 
                 if (curr == null)
@@ -225,47 +222,52 @@
 
                 if (curr.left == null && curr.right == null)
                 {
-                    if (curr != root)
-                    {
-                        if (parent.left == curr)
-                        {
-                            parent.left = null;
-                        }
-                        else
-                        {
-                            parent.right = null;
-                        }
-                    }
-                    else
+                    if (curr == root)
                     {
                         root = null;
+                        return;
                     }
+
+                    if (parent.left == curr)
+                    {
+                        parent.left = null;
+                        return;
+                    }
+
+                    parent.right = null;
+
+                    return;
                 }
-                else
+
+                if (curr.right == null)
                 {
-                    Node child = (curr.left != null) ? curr.left : curr.right;
-
-                    if (curr != root)
-                    {
-                        if (curr == parent.left)
-                        {
-                            parent.left = child;
-                        }
-                        else
-                        {
-                            parent.right = child;
-                        }
-                    }
-                    else
-                    {
-                        if (root.right != null)
-                        {
-                            child.left = root.right;
-                        }
-
-                        root = child;
-                    }
+                    parent.left = curr.left;
+                    return;
                 }
+
+                parent = curr;
+                Node leftLowestNode = curr.right;
+
+                while (leftLowestNode.left != null)
+                {
+                    parent = leftLowestNode;
+                    leftLowestNode = leftLowestNode.left;
+                }
+
+                curr.value = leftLowestNode.value;
+                if (parent.right == leftLowestNode)
+                {
+                    parent.right = leftLowestNode.right;
+                    return;
+                }
+
+                if (parent.left != null)
+                {
+                    parent.left = leftLowestNode.right;
+                    return;
+                }
+
+                parent.right = leftLowestNode.right;
             }
 
             //ЛКД обхождане на дървото
