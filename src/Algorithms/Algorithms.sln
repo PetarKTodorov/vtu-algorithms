@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.ReversePolishNotation",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.JosephusTask", "P06.JosephusTask\P06.JosephusTask.csproj", "{DA723CCD-7007-4666-892F-C61FA7DFA803}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.BinaryTree", "P07.BinaryTree\P07.BinaryTree.csproj", "{74269E6F-3C64-40D5-8AC4-E4F572AA3576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07.BinaryTree", "P07.BinaryTree\P07.BinaryTree.csproj", "{74269E6F-3C64-40D5-8AC4-E4F572AA3576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08.Graphs", "P08.Graphs\P08.Graphs.csproj", "{8B1A0AA5-9573-429F-A15C-BD6B1104BCB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{74269E6F-3C64-40D5-8AC4-E4F572AA3576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74269E6F-3C64-40D5-8AC4-E4F572AA3576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74269E6F-3C64-40D5-8AC4-E4F572AA3576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1A0AA5-9573-429F-A15C-BD6B1104BCB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1A0AA5-9573-429F-A15C-BD6B1104BCB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1A0AA5-9573-429F-A15C-BD6B1104BCB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1A0AA5-9573-429F-A15C-BD6B1104BCB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
