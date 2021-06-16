@@ -43,6 +43,9 @@
 
             while (newQueue.Count != countOfRemainingElements)
             {
+                string lastRemainingNumbers = String.Join(", ", newQueue);
+                Console.WriteLine($"Row numbers: {lastRemainingNumbers}");
+
                 for (int index = 0; index < iterationCycleOfRemoveIndex; index++)
                 {
                     newQueue.Enqueue(newQueue.Dequeue());

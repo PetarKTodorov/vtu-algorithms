@@ -6,7 +6,7 @@
     {
         public static void Main()
         {
-            int[] array = new int[] { 6, 2, 9, 3, 7, 1, 8, 5, 4 };
+            int[] array = new int[] { 3, 8, 2, 9, 6, 1, 5, 4, 7 };
 
             int leftBorder = 0;
             int rightBorder = array.Length - 1;
@@ -31,6 +31,8 @@
         /// <param name="rightBorder">The right border of the subarray that is being sorted</param>
         public static void QuickSort(int[] array, int leftBorder, int rightBorder)
         {
+            // O(n.log2n)
+
             int i = leftBorder, j = rightBorder;
             int middleElementValue = array[(leftBorder + rightBorder) / 2];
 
